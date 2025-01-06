@@ -78,3 +78,12 @@ article img {
 .more-link.bolded-link {
     color: #f0f;
 }
+
+a {
+    text-decoration: dashed line-through overline;
+}
+
+p {
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
