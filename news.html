@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Best News Ever!</title>
@@ -16,6 +17,7 @@
 
             <section>
                 <article>
+                    <img src="vid.gif" />
                     <a href="#"><h3>Dog kidnaps clown</h3></a>
                     <p>In a shocking turn of events, a dog kidnapped a clown</p>
                     <br /> <br />
@@ -24,18 +26,66 @@
 
             <section>
                 <article>
-                    <a href="#"><h3>Chocolate 5</h3></a>
+                    <img src="vid.gif" />
+                    <a href="#"><h3>HTML 5 saves the day</h3></a>
                     <p>In a shocking turn of events, a dog kidnapped a clown</p>
                     <br /> <br />
                 </article>
             </section>
 
+            <section id="contact-form">
+                <h2>Place Order</h2>
+                <form method="get" action="place-order.php">
+                    <h4>Delivery</h4>
+                    <input name="deliveryMethod" type="radio" value="delivery"/> Delivery <br />
+                    <input name="deliveryMethod" type="radio"  value="pickup"/> Pickup <br />
+
+                    <h4>Address</h4>
+                    <input name="address1", placeholder="Address Line 1" class="lg-input"/> <br />
+                    <input name="address2", placeholder="Address Line 2" class="lg-input"/> <br />
+
+                    <input name="city", placeholder="City" class="sm-input"/> 
+                    <input name="state", placeholder="State" class="sm-input"/> <br />
+                    <input name="zip", placeholder="Zip Code" class="sm-input"/>  
+                    <br />
+                    <br />
+
+                    <h4>Size</h4>
+                    <select name="size">
+                        <option value="12">12 - $13.99</option>
+                        <option value="16">16 - $16.99</option>
+                        <option value="18">18 - $18.99</option>
+                    </select>
+
+
+                    <h4><Ingredients></h4>
+                    <input name="ingredients" value="pepperoni" type="checkbox" /> Pepperoni <br />
+                    <input name="ingredients" value="salami" type="checkbox" /> Salami <br />
+                    <input name="ingredients" value="bacon" type="checkbox" /> Bacon <br />
+                    <input name="ingredients" value="sausage" type="checkbox" /> Italian Sausage <br />
+                    <input name="ingredients" value="onion" type="checkbox" /> Onions <br />
+                    <input name="ingredients" value="peppers" type="checkbox" /> Peppers 
+                    
+                    <br />
+                    <br />
+
+                    <button type="submit">Place Order</button> 
+                </form>
+            </section>
+
             <section>
-                <article>
-                    <a href="#"><h3>HTML 5 saves the day</h3></a>
-                    <p>In a shocking turn of events, a dog kidnapped a clown</p>
-                    <br /> <br />
-                </article>
+                <video width="540" height="320" controls>
+                    <source src="./videos/sample.mp4" type="video/mp4" >
+                    <source src="./videos/sample.ogg" type="video/ogg" >
+                    Your browser does not support HTML 5
+                </video>
+            </section>
+
+            <section>
+                <audio id="mysound" width="540" controls autoplay loop>
+                    <source src="./audio/sample.mp3" type="audio/mp3" >
+                    Your browser does not support HTML 5
+                </audio>
             </section>
 
             <footer>
