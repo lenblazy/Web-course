@@ -37,3 +37,6 @@ body h1 {
     border-top: none;
 }
 
+h1 {
+    float: left;
+}
