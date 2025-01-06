@@ -8,6 +8,11 @@ body {
     padding: 0; */
 }
 
+body > header > h3 {
+    background: #fff;
+    color: #0f0;
+}
+
 h3 {
     color: #000;
 }
@@ -15,4 +20,6 @@ h3 {
 body h3 {
     color: #f00;
 }
+
+
 
