@@ -2,11 +2,12 @@
 <html>
     <head>
         <title>Best News Ever!</title>
+
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <header>
-            <h1>Best News Ever!</h1>
-            <h3>We don't care if it's accurate</h3>
+        <header id="main-header">
+            <h1 id="site-title">Best News Ever!</h1>
         </header>
 
         <main>
@@ -15,18 +16,23 @@
                 <p>We've spent years in industry, and have found readers find exiting news</p>
             </section>
 
-            <section>
+            <section id="top-stories">
                 <article>
-                    <img src="vid.gif" />
+                    <div class="article-image" style="background:url(vid.gif)"></div>
                     <a href="#"><h3>Dog kidnaps clown</h3></a>
                     <p>In a shocking turn of events, a dog kidnapped a clown</p>
                     <br /> <br />
                 </article>
-            </section>
-
-            <section>
+            
                 <article>
-                    <img src="vid.gif" />
+                    <div class="article-image" style="background:url(vid.gif)"></div>
+                    <a href="#"><h3>HTML 5 saves the day</h3></a>
+                    <p>In a shocking turn of events, a dog kidnapped a clown</p>
+                    <br /> <br />
+                </article>
+
+                <article>
+                    <div class="article-image" style="background:url(godson.png)"></div>
                     <a href="#"><h3>HTML 5 saves the day</h3></a>
                     <p>In a shocking turn of events, a dog kidnapped a clown</p>
                     <br /> <br />
@@ -82,7 +88,7 @@
             </section>
 
             <section>
-                <audio id="mysound" width="540" controls autoplay loop>
+                <audio id="mysound" width="540" controls >
                     <source src="./audio/sample.mp3" type="audio/mp3" >
                     Your browser does not support HTML 5
                 </audio>
