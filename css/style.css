@@ -1,0 +1,18 @@
+body {
+    /* background: #00cc00; */
+    /* background: #0c0; */
+    background: rgba(255,200,100,.5);
+    color:#0af;
+    /* font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; */
+}
+
+h3 {
+    color: #000;
+}
+
+body h3 {
+    color: #f00;
+}
+
