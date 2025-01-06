@@ -35,7 +35,11 @@
             <section id="contact-form">
                 <h2>Place Order</h2>
                 <form method="get" action="place-order.php">
-                    <h4><Address></h4>
+                    <h4>Delivery</h4>
+                    <input name="deliveryMethod" type="radio" value="delivery"/> Delivery <br />
+                    <input name="deliveryMethod" type="radio"  value="pickup"/> Pickup <br />
+
+                    <h4>Address</h4>
                     <input name="address1", placeholder="Address Line 1" class="lg-input"/> <br />
                     <input name="address2", placeholder="Address Line 2" class="lg-input"/> <br />
 
@@ -44,12 +48,12 @@
                     <input name="zip", placeholder="Zip Code" class="sm-input"/>  <br />
 
                     <h4><Ingredients></h4>
-                    <input name="pepperoni" type="checkbox" /> Pepperoni <br />
-                    <input name="salami" type="checkbox" /> Salami <br />
-                    <input name="bacon" type="checkbox" /> Bacon <br />
-                    <input name="sausage" type="checkbox" /> Italian Sausage <br />
-                    <input name="onion" type="checkbox" /> Onions <br />
-                    <input name="peppers" type="checkbox" /> Peppers <br />
+                    <input name="ingredients" value="pepperoni" type="checkbox" /> Pepperoni <br />
+                    <input name="ingredients" value="salami" type="checkbox" /> Salami <br />
+                    <input name="ingredients" value="bacon" type="checkbox" /> Bacon <br />
+                    <input name="ingredients" value="sausage" type="checkbox" /> Italian Sausage <br />
+                    <input name="ingredients" value="onion" type="checkbox" /> Onions <br />
+                    <input name="ingredients" value="peppers" type="checkbox" /> Peppers <br />
 
                 </form>
             </section>
