@@ -85,7 +85,27 @@ a {
     text-decoration: dashed line-through overline;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 p {
     letter-spacing: 2px;
     word-spacing: 2px;
+}
+
+.my-input{
+    display: block;
+    width: 90%;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.my-input:focus {
+    background: #f00;
+    color: #fff;
+}
+
+article:active {
+    opacity: .4;
 }
