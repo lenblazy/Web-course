@@ -1,3 +1,9 @@
-alert("This is an alert");
+var btn = document.getElementById("go-button");
 
-console.log("This is a console log");
+function buttonClick() {
+  alert("You clicked the button");
+  btn.removeEventListener("click", buttonClick);
+}
+
+
+btn.addEventListener("click", buttonClick);
