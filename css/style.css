@@ -43,6 +43,15 @@ body h1 {
     border-top: none;
 }
 
+#main-header::before {
+   content: "";
+   display: block;
+   width: 10px;
+   height: 100px;
+   background: #000;
+   position: absolute;
+}
+
 #top-stories {
     width: 1000px;
     margin: auto;
