@@ -67,6 +67,7 @@ article img {
     height: 200px;
     background-size: cover !important;
     background-position:center !important;
+    border-radius: 50%;
 }
 
 .more-link {
@@ -99,6 +100,8 @@ p {
     width: 90%;
     margin: 10px;
     padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #000;
 }
 
 .my-input:focus {
