@@ -111,13 +111,14 @@ p {
     word-spacing: 2px;
 }
 
-.my-input{
+.my-input, .my-textarea {
     display: block;
     width: 90%;
     margin: 10px;
     padding: 10px 20px;
     border-radius: 10px;
     border: 1px solid #000;
+    resize: none;
 }
 
 .my-input:focus {
@@ -129,7 +130,7 @@ article:active {
     opacity: .4;
 }
 
-.my-text {
+.my-text  {
     max-height: 20px;
     overflow: scroll;
     overflow-x: hidden;

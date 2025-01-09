@@ -3,7 +3,14 @@ var btn = document.getElementById("go-button");
 function buttonClick() {
   alert("You clicked the button");
   btn.removeEventListener("click", buttonClick);
-  document.getElementById("text").innerHTML = "Don't do it";
+  
+
+  var customText = document.getElementsByClassName("my-input");
+  var textArea = document.getElementsByClassName("my-textarea");
+  var result = document.getElementById("text");
+
+  result.innerHTML = "Hello " + customText[0].value + "<br />";
+  result.innerHTML += "Message " + textArea[0].value;
 }
 
 
@@ -19,6 +26,9 @@ var indexNum = hobbies.indexOf("gaming");
 
 hobbies.splice(indexNum, 1);  
 
+
+
 hobbies.forEach(function(hobby, index) {
   console.log("i like", hobby, index);
 });
+
