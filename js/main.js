@@ -32,3 +32,12 @@ hobbies.forEach(function(hobby, index) {
   console.log("i like", hobby, index);
 });
 
+function getPhraseLen(p1, p2) {
+  var l = p1.length;
+
+  if (typeof p2 !== "undefined") {
+    l += p2.length;
+  }
+
+  return l;
+}
