@@ -15,6 +15,10 @@ hobbies.push("dancing");
 console.log(hobbies.shift());
 hobbies.unshift("singing");
 
+var indexNum = hobbies.indexOf("gaming");
+
+hobbies.splice(indexNum, 1);  
+
 hobbies.forEach(function(hobby, index) {
   console.log("i like", hobby, index);
 });
