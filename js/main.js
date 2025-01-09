@@ -39,5 +39,25 @@ function getPhraseLen(p1, p2) {
     l += p2.length;
   }
 
+  function printBoth() {
+    return p1 + " " + p2;
+  }
+
+  return printBoth();
+}
+
+function getParams(params) {
+  var l = params.phrase.length;
+
+  if (typeof params.anotherPhrase !== "undefined") {
+    l += params.anotherPhrase.length;
+  }
+
   return l;
 }
+
+var p1 = "Hello";
+var p2 = "World";
+
+var computed = getParams({phrase: p1, anotherPhrase: p2});
+console.log(computed);
