@@ -8,16 +8,19 @@
     <body>
         <header id="main-header">
             <h1 id="site-title">My form</h1>
+
+            <ul class="profile-menu">
+                <li><a class="profile-menu-trigger" data-trigger="dropdown" href="#">Logged In as Lenblazy</a>
+                    <ul class="profile-submenu submenu">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+
         </header>
-
-        <section id="top-stories">
-            <input class="my-input" placeholder="Your Name"/> <br />
-            <textarea class="my-textarea" placeholder="Enter your text here"></textarea> <br />
-            <button id="go-button">Go</button>
-            <br /> <br />
-
-            <div id="text">that butt</div> 
-        </section>
 
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
         <script src="./js/main-jq.js"></script>
