@@ -61,3 +61,15 @@ var p2 = "World";
 
 var computed = getParams({phrase: p1, anotherPhrase: p2});
 console.log(computed);
+
+var numbers = [3,8,7,9,6,1,12,5,14,2,19,16,18,11,10,15,13,17,20];
+
+numbers.sort(function(a, b) { return a - b });
+var currentNum = 1;
+for (var i = 0; i < numbers.length; i++) {
+  if (numbers[i] !== currentNum) {
+    console.log("Missing Number ", currentNum);
+    break;
+  }
+  currentNum++;
+}
