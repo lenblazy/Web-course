@@ -8,5 +8,13 @@ $(document).ready(function() {
   // document.getElementsByClassName('my-input')[0].value = 'New Input Value';
   $('.my-input').val('New Input Value'); //jquery
 
+  var el = document.getElementById('text');
+
+  console.log("EL in Vanilla JS:", el);
+  console.log("EL in jQuery:", $(el));
+
+  $('#go-button').on('click', function() {
+    console.log('Button clicked');
+  });
 
  });
