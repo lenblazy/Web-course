@@ -76,6 +76,23 @@ for (var i = 0; i < numbers.length; i++) {
 
 class Animal {
 
+  constructor(name, height, weight) {
+    console.log("Animal created named", name);
+    this.name = name;
+    this.height = height;
+    this.weight = weight;
+  }
+
+  nameLength() {
+    return this.name.length;
+  }
+
 }
 
-var dog = new Animal();
+Animal.planet = "Earth";
+
+var dog = new Animal("Fido", 12, 20);
+var fish = new Animal("Goldie", 2, 0.5);
+
+console.log(fish.nameLength());
+console.log(dog.constructor.planet);
