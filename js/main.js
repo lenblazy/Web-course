@@ -89,10 +89,31 @@ class Animal {
 
 }
 
-Animal.planet = "Earth";
+// Animal.planet = "Earth";
 
-var dog = new Animal("Fido", 12, 20);
-var fish = new Animal("Goldie", 2, 0.5);
+// var dog = new Animal("Fido", 12, 20);
+// var fish = new Animal("Goldie", 2, 0.5);
 
-console.log(fish.nameLength());
-console.log(dog.constructor.planet);
+// console.log(fish.nameLength());
+// console.log(dog.constructor.planet);
+
+class Dog extends Animal {
+  constructor(name, height, weight, barkVolume, leashColor) {
+    super(name, height, weight);
+
+    this.barkVolume = barkVolume;
+    this.leashColor = leashColor;
+  }
+
+  bark() {
+    if (this.barkVolume > 50) {
+      console.log(this.name + " barks loudly");
+    } else {
+      console.log(this.name + " barks softly");
+    }
+  }
+  
+}
+
+var king = new Dog("King", 12, 20, 60, "red");
+king.bark();
