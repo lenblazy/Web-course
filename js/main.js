@@ -73,3 +73,9 @@ for (var i = 0; i < numbers.length; i++) {
   }
   currentNum++;
 }
+
+class Animal {
+
+}
+
+var dog = new Animal();
