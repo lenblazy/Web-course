@@ -30,13 +30,20 @@ $(document).ready(function() {
     var el = $(e.currentTarget);
     var action = el.attr('id');
 
+    var content = $('.text').val();
+
     if (action === 'prepend') {
       console.log('Prepend');
+      $('#main').prepend(content);
     } else if (action === 'append') {
       console.log('Append');
+      $('#main').append(content);
     } else if (action === 'replace') {
       console.log('Replace');
+      $('#main').html(content);
     }
+
+    $('.text').val('');
   });
 
 });
