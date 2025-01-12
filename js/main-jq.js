@@ -1,5 +1,45 @@
 $(document).ready(function() {
 
+  $(document).on('contextmenu', function(event) {
+    return false;
+  });
+
+ 
+
+  $(document).on('mousedown', function(event) {
+    event.stopPropagation();
+
+    if (event.which === 1) {
+      console.log(event.pageY, event.pageX);
+
+      $('#context').css({
+        top: event.pageY,
+        left: event.pageX
+      });
+
+      $('#context').fadeIn();
+      return false;
+
+     
+    }
+
+    $('#context').fadeOut();
+
+    // switch (event.which) {
+    //   case 1:
+    //     console.log('Left mouse button pressed');
+    //     break;
+    //   case 2:
+    //     console.log('Middle mouse button pressed');
+    //     break;
+    //   case 3:
+    //     console.log('Right mouse button pressed');
+    //     break;
+    //   default:
+    //     console.log('Unknown mouse button pressed');
+    // }
+  });
+
   $('[href="https://www.google.com"]').on('click', function(event) {
     // event.preventDefault();
     return false;

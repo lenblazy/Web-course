@@ -183,3 +183,34 @@ section {
     width: 900px;
     margin: auto;
 }
+
+
+#context {
+    display: inline-block;
+    position: absolute;
+    background: #fff;
+    box-shadow: 2px 2px 15px rgba(0,0,0,.5);
+    display: none;
+}
+
+.context-menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.context-menu a {
+    width: 200px;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: #333;
+    text-shadow: none;
+    font-weight: 600;
+    letter-spacing: 0px;    
+}
+
+.context-menu a:hover {
+    background: #eee;
+}
