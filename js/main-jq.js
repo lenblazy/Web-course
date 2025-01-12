@@ -24,6 +24,20 @@ $(document).ready(function() {
     $('.profile-menu').on('mouseleave', function() {
       submenu.fadeOut(300);
     });
-  })
+  });
+
+  $('#prepend, #append, #replace').on('click', function(e) {
+    var el = $(e.currentTarget);
+    var action = el.attr('id');
+
+    if (action === 'prepend') {
+      console.log('Prepend');
+    } else if (action === 'append') {
+      console.log('Append');
+    } else if (action === 'replace') {
+      console.log('Replace');
+    }
+  });
+
 });
 

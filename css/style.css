@@ -178,3 +178,8 @@ article:hover {
     background: #eee;
 }
 
+section {
+    max-width: 100%;
+    width: 900px;
+    margin: auto;
+}
