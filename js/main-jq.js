@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+  $('[href="https://www.google.com"]').on('click', function(event) {
+    // event.preventDefault();
+    return false;
+    console.log('Google link clicked');
+  });
+
   // // vanilla JS
   // // document.getElementById('text').innerHTML = 'This is now my text';
   // $('#text').html('This is now my text'); //jquery
