@@ -10,7 +10,15 @@ $(document).ready(function() {
     event.stopPropagation();
 
     if (event.which === 1) {
-      console.log(event.pageY, event.pageX);
+
+      $('.hidden').removeClass('shown');
+
+      if($(event.target).is('img')) {
+        $('.saveimg, .newtab').addClass('shown');
+      } else if($(event.target).is('a')) {
+        $('.newtab').addClass('shown');
+      }
+
 
       $('#context').css({
         top: event.pageY,
