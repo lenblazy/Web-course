@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  gQuery('my-selector').addClass('new-class');
+
   $(document).on('contextmenu', function(event) {
     return false;
   });
