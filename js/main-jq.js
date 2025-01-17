@@ -105,6 +105,16 @@ $(document).ready(function() {
     $('.text').val('');
   });
 
+  $('p:contains("Lorem")').html("This has Lorem in it. Shocker");
+
+  if($(':contains("Lorem")').is("div")) {
+    console.log("Lorem is inside a paragraph");
+  }
+
+  if($(':contains("Lorem")').hasClass("div")) {
+    console.log("Lorem is inside a paragraph");
+  }
+
   $('textarea').focusin(function() {
     console.log('focus in on text area');
   });
@@ -123,6 +133,7 @@ $(document).ready(function() {
       console.log('Your Email is Invalid');
     }
   });
+
 
 
 });
