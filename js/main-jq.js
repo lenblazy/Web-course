@@ -115,6 +115,12 @@ $(document).ready(function() {
     console.log("Lorem is inside a paragraph");
   }
 
+  $('p').each(function () {
+    console.log($(this).text());
+  });
+
+  console.
+
   $('textarea').focusin(function() {
     console.log('focus in on text area');
   });
