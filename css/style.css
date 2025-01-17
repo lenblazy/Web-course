@@ -222,3 +222,7 @@ section {
 .context-menu a.hidden.shown {
     display: block;
 }
+
+.status {
+    display: none;
+}

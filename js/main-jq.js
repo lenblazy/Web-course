@@ -105,5 +105,25 @@ $(document).ready(function() {
     $('.text').val('');
   });
 
+  $('textarea').focusin(function() {
+    console.log('focus in on text area');
+  });
+
+  $('textarea').focusout(function() {
+    console.log('focus out of text area');
+  });
+
+  $('input').focusout(function() {
+
+    if($(this).val().indexOf('@') > -1 && $(this).val().indexOf('.') > -1 ) {
+      $('.validation').html("Valid Email");
+      console.log('Valid Email');
+    } else {
+      $('.validation').html("Your Email is Invalid");
+      console.log('Your Email is Invalid');
+    }
+  });
+
+
 });
 
