@@ -2,6 +2,9 @@ $(document).ready(function() {
 
   gQuery('my-selector').addClass('new-class');
 
+  console.log($('.submenu a').first().text());
+  console.log($('.submenu a').last().text());
+
   $(document).on('contextmenu', function(event) {
     return false;
   });
@@ -11,7 +14,7 @@ $(document).ready(function() {
   $(document).on('mousedown', function(event) {
     event.stopPropagation();
 
-    if (event.which === 1) {
+    if (event.which === 2) {
 
       $('.hidden').removeClass('shown');
 
